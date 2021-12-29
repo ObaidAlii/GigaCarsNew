@@ -1,0 +1,43 @@
+.header {
+  padding: 5px;
+  background-color: #282c34;
+  text-align: center;
+}
+
+.header h2 {
+  color: #4C3F76;
+}
+
+.header h2 span {
+  color: deepskyblue;
+}
+
+.header-content {
+  background-color: #5B6471;
+  display: grid;
+  grid-template-columns: auto 1fr 3fr;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.header-logo {
+  height: 2.5rem;
+  margin: 0 20px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .header-logo {
+    animation: header-logo-spin infinite 15s linear;
+  }
+}
+
+@keyframes header-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
